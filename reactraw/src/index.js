@@ -1,8 +1,21 @@
 import React from "react";
 import ReactDOM from 'react-dom';
+import category from "./category";
+
 
 const App = () => {
-    return <h1>Hello, world!</h1>;
-};
+    return (<div><h1>This is heading tag</h1>
+    <category/>
+    <App1/>
+    </div>
+    )
+}
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+const App1 = () => {
+    return <p>This is paragraph</p>
+}
+
+const result = [<App/>  ]
+
+ReactDOM.render(result, document.getElementById('root'));
